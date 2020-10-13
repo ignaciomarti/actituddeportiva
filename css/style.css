@@ -25,6 +25,10 @@ img{
     padding-bottom: 0;
 }
 
+#carousel .item img{
+    width: 100%;
+}
+
 div.header, div.footer{
     background-color: var(--main-bg-color);
     height: .75rem;
@@ -73,11 +77,21 @@ section.arancel div.logo img{
 
 section.instagram{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-section.instagram div.instagram-container{
-    margin-right: 2rem;
+
+@media (min-width: 768px){
+    section.instagram{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        flex-direction: row;
+    }
+    section.instagram div.instagram-container{
+        margin-right: 2rem;
+    }
 }
 section.instagram div.instagram-container a{
     display: flex;
